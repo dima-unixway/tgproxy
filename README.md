@@ -50,6 +50,7 @@ Load from `.env` (via godotenv). Required:
 | `API_ID`            | Telegram API ID (int)                | required   |
 | `API_HASH`          | Telegram API hash (string)           | required   |
 | `PHONE`             | Phone number (e.g. `+1234567890`)    | required   |
+| `HTTP_ADDR`         | HTTP listen addres                   | `127.0.0.1`|
 | `HTTP_PORT`         | HTTP listen port                     | `8080`     |
 | `TDLIB_DATABASE_DIR`| TDLib data directory                 | `./data`   |
 | `TDLIB_LOG_LEVEL`   | TDLib verbosity (0-3)                | `0`        |

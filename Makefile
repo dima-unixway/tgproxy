@@ -1,5 +1,5 @@
 CURRENT_DIR := $(shell pwd)
-VERSION := 0.1.0
+VERSION := 0.2.0
 BINARY := tgproxy
 IMAGE := $(BINARY):$(VERSION)
 

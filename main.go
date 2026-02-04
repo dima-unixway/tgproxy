@@ -30,7 +30,7 @@ func main() {
 			AddSource: true,
 		}),
 	)
-	log.Info("Configuration loaded", "port", cfg.HTTPPort)
+	log.Info("Configuration loaded", "addr", cfg.HTTPAddr, "port", cfg.HTTPPort)
 
 	router := router.NewRouter(100, log)
 	defer router.Close()

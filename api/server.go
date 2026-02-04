@@ -53,7 +53,7 @@ func NewServer(cfg *config.Config, tg *telegram.Client, router *router.Router, l
 		handlers: handlers,
 		r:        r,
 		server: &http.Server{
-			Addr:         ":" + cfg.HTTPPort,
+			Addr:         cfg.HTTPAddr + ":" + cfg.HTTPPort,
 			Handler:      handler,
 			ReadTimeout:  15 * time.Second,
 			WriteTimeout: 15 * time.Second,

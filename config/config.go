@@ -14,6 +14,7 @@ type Config struct {
 	APIID            int32
 	APIHash          string
 	Phone            string
+	HTTPAddr         string
 	HTTPPort         string
 	TDLIBDatabaseDir string
 	TDLIBLogLevel    int32
@@ -48,6 +49,7 @@ func Load() (*Config, error) {
 		APIID:            int32(apiID64),
 		APIHash:          getEnv("API_HASH", ""),
 		Phone:            getEnv("PHONE", ""),
+		HTTPAddr:         getEnv("HTTP_ADDR", "127.0.0.1"),
 		HTTPPort:         getEnv("HTTP_PORT", "8080"),
 		TDLIBDatabaseDir: getEnv("TDLIB_DATABASE_DIR", "./data"),
 		TDLIBLogLevel:    int32(tdlibLogLevel),
