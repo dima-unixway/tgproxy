@@ -89,7 +89,7 @@ Response: `{"peers": [{"peer_id":"...","type":"user","name":"John Doe","last_mes
 curl -X POST http://localhost:8080/send \
   -H "Content-Type: application/json" \
   -d '{
-    "peer_id": "@username",
+    "peer_id": "123",
     "type": "text",
     "content": { "text": "Hello from tgproxy!" }
   }'
