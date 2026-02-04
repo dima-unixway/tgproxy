@@ -1,0 +1,7 @@
+plans
+data
+.env
+tgproxy
+.build
+*.rpm
+*.deb
